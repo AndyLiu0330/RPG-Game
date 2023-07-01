@@ -1,7 +1,7 @@
 # RPG-Gmae
 My first unity game.
 
-[main screen](./images/main.jpg)
+![main screen](./images/main.jpg)
 # Reference
 I refer to the below youtube video and deside to make a game in my summer vocation.
 
