@@ -2,17 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum PlayerState
+{
+    walk,
+    attack,
+    interact
+}
 public class playermovement : MonoBehaviour
 {
     // Start is called before the first frame update
+    public PlayerState currentState;
     public float speed;
-    private Rigidbody2D myRigidbody2D; 
+    private Rigidbody2D myRigidbody2D;
     private Vector3 change;
     private Animator animat;
     void Start()
     {
-     myRigidbody2D = GetComponent<Rigidbody2D>();   
-     animat = GetComponent<Animator>();
+        myRigidbody2D = GetComponent<Rigidbody2D>();
+        animat = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -21,22 +28,45 @@ public class playermovement : MonoBehaviour
         change = Vector2.zero;
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
-        UpdateAnimationAndMove();
-     
+        if (Input.GetButtonDown("attack") && currentState != PlayerState.attack)
+        {
+            StartCoroutine(AttackCo());
+
+        }
+        else if (currentState == PlayerState.walk)
+        {
+
+            UpdateAnimationAndMove();
+        }
+
     }
-    void UpdateAnimationAndMove(){
-   if (change != Vector3.zero){
+    private IEnumerator AttackCo()
+    {
+        animat.SetBool("attacking", true);
+        currentState = PlayerState.attack;
+        yield return null;
+        animat.SetBool("attacking", false);     
+        yield return new WaitForSeconds (.3f);
+        currentState = PlayerState.walk;
+
+    }
+    void UpdateAnimationAndMove()
+    {
+        if (change != Vector3.zero)
+        {
             MoveCharacter();
             animat.SetFloat("moveX", change.x);
             animat.SetFloat("moveY", change.y);
             animat.SetBool("moving", true);
 
         }
-        else {
+        else
+        {
             animat.SetBool("moving", false);
         }
     }
-    void MoveCharacter(){
+    void MoveCharacter()
+    {
         myRigidbody2D.MovePosition(
              transform.position + change * speed * Time.deltaTime
         );
