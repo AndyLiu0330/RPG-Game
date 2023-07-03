@@ -24,8 +24,10 @@ public class knockback : MonoBehaviour
     }
     private IEnumerator KnockCO(Rigidbody2D enemy){
         if (enemy != null){
+        enemy.GetComponent<Enemy>().currentState = EnemyState.stagger;
             yield return new WaitForSeconds(koncktime);
             enemy.velocity = Vector2.zero;
+            enemy.GetComponent<Enemy>().currentState = EnemyState.idle;
             enemy.isKinematic = true;
         }
     }
