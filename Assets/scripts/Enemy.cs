@@ -16,19 +16,15 @@ public int health;
 public string enemyName;
 public int baseAttack;
 public float moveSpeed;
-public void Knock(Rigidbody2D myRigidbody, float knocktime){
-    StartCoroutine(KnockCO(myRigidbody, knocktime));
-}
-
-        
-       private IEnumerator KnockCO(Rigidbody2D myRigidbody, float knocktime)
+    // Start is called before the first frame update
+    void Start()
     {
-        if (myRigidbody != null )
-        {
-            yield return new WaitForSeconds(knocktime);
-            myRigidbody.velocity = Vector2.zero;
-            currentState = EnemyState.idle;
-            myRigidbody.velocity = Vector2.zero;
-        }
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }
