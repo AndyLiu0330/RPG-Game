@@ -15,6 +15,8 @@ public class Log : Enemy
     void Start()
     {
         currentState = EnemyState.idle;
+        private Rigidbody2D myRigidbody;
+        currentState = EnemyState.idle;
         myRigidbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         target = GameObject.FindWithTag("Player").transform;

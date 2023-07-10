@@ -27,4 +27,20 @@ public float moveSpeed;
     {
         
     }
+    public void Knock(Rigidbody2D myRigdbody2D, float koncktime)
+    {
+        StartCoroutine(KnockCO(myRigdbody2D, koncktime));
+    }
+    private IEnumerator KnockCO(Rigidbody2D myRigdbody2D, float koncktime)
+    {
+        if (myRigdbody2D != null )
+        {
+            myRigdbody2D.GetComponent<Enemy>().currentState = EnemyState.stagger;
+            yield return new WaitForSeconds(koncktime);
+            myRigdbody2D.velocity = Vector2.zero;
+            currentState = EnemyState.idle;
+            myRigdbody2D.velocity = Vector2.zero;
+
+        }
+    }
 }
