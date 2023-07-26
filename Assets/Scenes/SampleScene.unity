@@ -5632,7 +5632,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  health: 2
+  health: 0
+  maxHealth: {fileID: 11400000, guid: 25242bfda8cb5d848b90162f35e01137, type: 2}
   enemyName: The Log
   baseAttack: 1
   moveSpeed: 1.5
