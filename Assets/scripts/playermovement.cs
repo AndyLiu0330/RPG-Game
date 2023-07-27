@@ -52,8 +52,8 @@ public class playermovement : MonoBehaviour
         animat.SetBool("attacking", true);
         currentState = PlayerState.attack;
         yield return null;
-        animat.SetBool("attacking", false);     
-        yield return new WaitForSeconds (.3f);
+        animat.SetBool("attacking", false);
+        yield return new WaitForSeconds(.3f);
         currentState = PlayerState.walk;
 
     }
@@ -81,14 +81,18 @@ public class playermovement : MonoBehaviour
     }
     public void Knock(float koncktime, float damage)
     {
-            currentHealth.initialValue -= damage;
-        if (currentHealth.initialValue > 0)
+        currentHealth.runtimeValue -= damage;
+        playerHealthSignal.Raise();
+        if (currentHealth.runtimeValue > 0)
         {
-                playerHealthSignal.Raise();
-                StartCoroutine(KnockCO(koncktime));
+            StartCoroutine(KnockCO(koncktime));
+        }
+        else
+        {
+            this.gameObject.SetActive(false);
         }
     }
-    private IEnumerator KnockCO( float koncktime)
+    private IEnumerator KnockCO(float koncktime)
     {
         if (myRigidbody2D != null)
         {
