@@ -4954,8 +4954,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a13d08246592a4a45afde8d7c4ef56e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 4
-  koncktime: 0.4
+  thrust: 2
+  koncktime: 0.2
+  damage: 1
 --- !u!1 &481889420
 GameObject:
   m_ObjectHideFlags: 0
@@ -5258,8 +5259,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a13d08246592a4a45afde8d7c4ef56e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 4
-  koncktime: 0.4
+  thrust: 2
+  koncktime: 0.2
+  damage: 1
 --- !u!1 &692177397
 GameObject:
   m_ObjectHideFlags: 0
@@ -5682,6 +5684,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 2
   koncktime: 0.2
+  damage: 0
 --- !u!1 &963330762
 GameObject:
   m_ObjectHideFlags: 0
@@ -17872,8 +17875,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a13d08246592a4a45afde8d7c4ef56e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 4
-  koncktime: 0.4
+  thrust: 2
+  koncktime: 0.2
+  damage: 1
 --- !u!1 &1850376330
 GameObject:
   m_ObjectHideFlags: 0
@@ -17951,8 +17955,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a13d08246592a4a45afde8d7c4ef56e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 4
-  koncktime: 0.4
+  thrust: 2
+  koncktime: 0.2
+  damage: 1
 --- !u!1 &2065127273
 GameObject:
   m_ObjectHideFlags: 0
