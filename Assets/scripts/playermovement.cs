@@ -18,6 +18,8 @@ public class playermovement : MonoBehaviour
     private Rigidbody2D myRigidbody2D;
     private Vector3 change;
     private Animator animat;
+    public FloatValue currentHealth;
+    public Signal playerHealthSignal;
     void Start()
     {
         currentState = PlayerState.walk;
@@ -50,8 +52,8 @@ public class playermovement : MonoBehaviour
         animat.SetBool("attacking", true);
         currentState = PlayerState.attack;
         yield return null;
-        animat.SetBool("attacking", false);     
-        yield return new WaitForSeconds (.3f);
+        animat.SetBool("attacking", false);
+        yield return new WaitForSeconds(.3f);
         currentState = PlayerState.walk;
 
     }
@@ -77,11 +79,20 @@ public class playermovement : MonoBehaviour
              transform.position + change * speed * Time.deltaTime
         );
     }
-    public void Knock(float koncktime)
+    public void Knock(float koncktime, float damage)
     {
-        StartCoroutine(KnockCO(koncktime));
+        currentHealth.runtimeValue -= damage;
+        playerHealthSignal.Raise();
+        if (currentHealth.runtimeValue > 0)
+        {
+            StartCoroutine(KnockCO(koncktime));
+        }
+        else
+        {
+            this.gameObject.SetActive(false);
+        }
     }
-    private IEnumerator KnockCO( float koncktime)
+    private IEnumerator KnockCO(float koncktime)
     {
         if (myRigidbody2D != null)
         {
