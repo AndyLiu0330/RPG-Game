@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af95234d0fe38e440838036881fe6557, type: 3}
   m_Name: HeatContainers
   m_EditorClassIdentifier: 
-  initialValue: 0
+  initialValue: 3
+  runtimeValue: 3
