@@ -12623,7 +12623,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
+    oldSize: {x: 0.75, y: 0.8125}
     newSize: {x: 2, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -27570,11 +27570,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6375254599815367305, guid: 43de17e448c2c334fb3d4a15a881569d, type: 3}
       propertyPath: m_Size.x
-      value: 0.96459675
+      value: 0.984849
+      objectReference: {fileID: 0}
+    - target: {fileID: 6375254599815367305, guid: 43de17e448c2c334fb3d4a15a881569d, type: 3}
+      propertyPath: m_Size.y
+      value: 1.0848708
       objectReference: {fileID: 0}
     - target: {fileID: 6375254599815367305, guid: 43de17e448c2c334fb3d4a15a881569d, type: 3}
       propertyPath: m_Offset.x
       value: -0.002667904
+      objectReference: {fileID: 0}
+    - target: {fileID: 6375254599815367305, guid: 43de17e448c2c334fb3d4a15a881569d, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.042435408
       objectReference: {fileID: 0}
     - target: {fileID: 6375254599815367305, guid: 43de17e448c2c334fb3d4a15a881569d, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
@@ -29819,6 +29827,16 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 1
       m_TileSpriteIndex: 102
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -12, y: 5, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 93
+      m_TileSpriteIndex: 55
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -32472,8 +32490,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 0e6a44caa2f35764a903f6c3691976d7, type: 2}
   - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: 0bee0d27894635a42a48b861c67e9135, type: 2}
   - m_RefCount: 3
@@ -32605,8 +32623,8 @@ Tilemap:
     m_Data: {fileID: -1634507650, guid: 7e91c248a63948f40abe4b7783a34fd8, type: 3}
   - m_RefCount: 111
     m_Data: {fileID: 1373285237, guid: 7e91c248a63948f40abe4b7783a34fd8, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -55994027, guid: 7e91c248a63948f40abe4b7783a34fd8, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: 2055515135, guid: 7e91c248a63948f40abe4b7783a34fd8, type: 3}
   - m_RefCount: 3
@@ -32704,7 +32722,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 1290069143, guid: 7e91c248a63948f40abe4b7783a34fd8, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 440
+  - m_RefCount: 441
     m_Data:
       e00: 1
       e01: 0
@@ -32723,7 +32741,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 440
+  - m_RefCount: 441
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -33349,10 +33367,6 @@ CompositeCollider2D:
         Y: 51249996
       - X: -120000000
         Y: 51874996
-      - X: -120000000
-        Y: 59999992
-      - X: -110000000
-        Y: 59999992
       - X: -110000000
         Y: 51874996
       - X: -105000000
@@ -34119,10 +34133,8 @@ CompositeCollider2D:
       - {x: -13.624993, y: 5.249993}
       - {x: -13.437489, y: 5.0625014}
       - {x: -12.999998, y: 5.1249995}
-      - {x: -12, y: 5.1875267}
-      - {x: -11.99997, y: 5.999999}
-      - {x: -11, y: 5.9999695}
-      - {x: -10.999975, y: 5.1874967}
+      - {x: -11.999998, y: 5.1874995}
+      - {x: -10.999998, y: 5.187499}
       - {x: -10.499998, y: 5.1249995}
       - {x: -9.999997, y: 5.124999}
       - {x: -9.749997, y: 5.0624995}
@@ -34623,6 +34635,10 @@ PrefabInstance:
       propertyPath: m_CullTransparentMesh
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7628880894594401495, guid: 40038e1990f1ea045a1d2b41cc407cde, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -456935879, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
     - target: {fileID: 7628880896419135923, guid: 40038e1990f1ea045a1d2b41cc407cde, type: 3}
       propertyPath: m_Pivot.x
       value: 0

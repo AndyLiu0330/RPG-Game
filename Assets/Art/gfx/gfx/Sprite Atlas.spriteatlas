@@ -1510,16 +1510,13 @@ SpriteAtlas:
   - {fileID: 1328202887, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
   - {fileID: 503895725, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
   - {fileID: -1464356269, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
-  - {fileID: 472822066, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
   - {fileID: 1532960457, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
   - {fileID: 1985423052, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
   - {fileID: 1307871478, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
   - {fileID: -130947579, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
-  - {fileID: -70011265, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
+  - {fileID: -1764910636, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
   - {fileID: 1453058131, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
-  - {fileID: 747321383, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
-  - {fileID: -2093568702, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
-  - {fileID: -960398310, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
+  - {fileID: -456935879, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
   - {fileID: 1271058911, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
   - {fileID: 864474812, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
   - {fileID: 369451387, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
@@ -1538,6 +1535,7 @@ SpriteAtlas:
   - {fileID: -1813578863, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
   - {fileID: 155336863, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
   - {fileID: 622364877, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
+  - {fileID: 472822066, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
   - {fileID: -43443042, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
   - {fileID: -1054098934, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
   - {fileID: -1740121865, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
@@ -3111,7 +3109,6 @@ SpriteAtlas:
   - objects_5
   - objects_6
   - objects_7
-  - objects_0
   - objects_1
   - objects_2
   - objects_3
@@ -3119,8 +3116,6 @@ SpriteAtlas:
   - objects_141
   - objects_139
   - objects_140
-  - objects_143
-  - objects_142
   - objects_134
   - objects_135
   - objects_129
@@ -3139,6 +3134,7 @@ SpriteAtlas:
   - objects_122
   - objects_121
   - objects_120
+  - objects_
   - objects_17
   - objects_48
   - objects_16
