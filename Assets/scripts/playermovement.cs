@@ -20,6 +20,7 @@ public class playermovement : MonoBehaviour
     private Animator animat;
     public FloatValue currentHealth;
     public Signal playerHealthSignal;
+    public VectorValue startingPosition;
     void Start()
     {
         currentState = PlayerState.walk;
@@ -27,6 +28,7 @@ public class playermovement : MonoBehaviour
         animat = GetComponent<Animator>();
         animat.SetFloat("moveX", 0);
         animat.SetFloat("moveY", -1);
+        transform.position = startingPosition.initialValue;
     }
 
     // Update is called once per frame

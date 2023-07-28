@@ -11,6 +11,7 @@ public class CameraMovement : MonoBehaviour
     public Vector2 minPosition;
     void Start()
     {
+        transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
         
     }
 
