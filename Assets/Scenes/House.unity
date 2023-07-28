@@ -6290,6 +6290,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 72186852, guid: 43de17e448c2c334fb3d4a15a881569d, type: 3}
+      propertyPath: fadeWait
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 72186852, guid: 43de17e448c2c334fb3d4a15a881569d, type: 3}
+      propertyPath: fadeInPanel
+      value: 
+      objectReference: {fileID: 8858927612346216655, guid: 0df5655dc642e8f489a2ac4b82f121b9, type: 3}
+    - target: {fileID: 72186852, guid: 43de17e448c2c334fb3d4a15a881569d, type: 3}
+      propertyPath: fadeOutPanel
+      value: 
+      objectReference: {fileID: 7224961327889498660, guid: 6b1bd99bcb109a2448f6702823059a3c, type: 3}
+    - target: {fileID: 72186852, guid: 43de17e448c2c334fb3d4a15a881569d, type: 3}
       propertyPath: playerStorage
       value: 
       objectReference: {fileID: 11400000, guid: 8fd7a997173796b4487f8cf8c5dd5d69, type: 2}

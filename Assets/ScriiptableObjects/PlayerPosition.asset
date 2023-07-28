@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: PlayerPosition
   m_EditorClassIdentifier: 
   initialValue: {x: 0, y: -3}
+  defaultValue: {x: 0, y: 0}
