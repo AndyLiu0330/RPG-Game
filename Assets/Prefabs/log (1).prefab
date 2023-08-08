@@ -176,11 +176,14 @@ MonoBehaviour:
   enemyName: The Log
   baseAttack: 1
   moveSpeed: 1.5
+  deathEffect: {fileID: 5037332553855946773, guid: 15883bacbf0106e4b8b99b2a87c5d62e, type: 3}
+  myRigidbody: {fileID: 0}
   target: {fileID: 0}
   chaseRadius: 4
   attackRadius: 1.2
   homePosition: {fileID: 0}
   anim: {fileID: 0}
+  MoveSpeed: 0
 --- !u!61 &5081320252800143652
 BoxCollider2D:
   m_ObjectHideFlags: 0
