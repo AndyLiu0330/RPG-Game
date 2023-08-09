@@ -23,6 +23,7 @@ public class playermovement : MonoBehaviour
     public VectorValue startingPosition;
     public Inventory playerInventory;
     public SpriteRenderer receivedItemSprite;
+    public Signal playerHit;
     void Start()
     {
         currentState = PlayerState.walk;
@@ -123,6 +124,7 @@ public class playermovement : MonoBehaviour
     }
     private IEnumerator KnockCO(float koncktime)
     {
+        playerHit.Raise();
         if (myRigidbody2D != null)
         {
             yield return new WaitForSeconds(koncktime);
