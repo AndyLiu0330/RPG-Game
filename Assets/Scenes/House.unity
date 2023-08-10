@@ -6310,6 +6310,22 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 8fd7a997173796b4487f8cf8c5dd5d69, type: 2}
     - target: {fileID: 72186852, guid: 43de17e448c2c334fb3d4a15a881569d, type: 3}
+      propertyPath: cameraNewMax.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 72186852, guid: 43de17e448c2c334fb3d4a15a881569d, type: 3}
+      propertyPath: cameraNewMax.y
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 72186852, guid: 43de17e448c2c334fb3d4a15a881569d, type: 3}
+      propertyPath: cameraNewMin.x
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 72186852, guid: 43de17e448c2c334fb3d4a15a881569d, type: 3}
+      propertyPath: cameraNewMin.y
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 72186852, guid: 43de17e448c2c334fb3d4a15a881569d, type: 3}
       propertyPath: playerPosition.x
       value: -11
       objectReference: {fileID: 0}
