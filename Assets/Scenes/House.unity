@@ -6290,6 +6290,14 @@ PrefabInstance:
       value: 0.33
       objectReference: {fileID: 0}
     - target: {fileID: 72186852, guid: 43de17e448c2c334fb3d4a15a881569d, type: 3}
+      propertyPath: cameraMax
+      value: 
+      objectReference: {fileID: 11400000, guid: ecd5e5e363fe6aa4cb203e8703027a82, type: 2}
+    - target: {fileID: 72186852, guid: 43de17e448c2c334fb3d4a15a881569d, type: 3}
+      propertyPath: cameraMin
+      value: 
+      objectReference: {fileID: 11400000, guid: dae573afcc151e042ab5dab94806eff1, type: 2}
+    - target: {fileID: 72186852, guid: 43de17e448c2c334fb3d4a15a881569d, type: 3}
       propertyPath: fadeInPanel
       value: 
       objectReference: {fileID: 8858927612346216655, guid: 0df5655dc642e8f489a2ac4b82f121b9, type: 3}
