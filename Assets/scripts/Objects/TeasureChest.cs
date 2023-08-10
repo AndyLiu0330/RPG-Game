@@ -7,18 +7,28 @@ public class TeasureChest : Interactable
 
 
 {
+    [Header("Contents")]
     public Item contents;
     public bool isOpen;
+    public BoolValue storedOpen;
+    public Inventory playerInventory;
+    [Header("Signals and Dialog")]
     public Signal raiseItem;
     public GameObject dialogBox;
     public Text dialogText;
+    [Header("Animation")]
     private Animator anim;
-    public Inventory playerInventory;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        isOpen = storedOpen.runtimeValue;
+        if (isOpen)
+        {
+            anim.SetBool("opened", true);
+            Debug.Log("chest is open");
+        }
     }
 
     // Update is called once per frame
@@ -51,28 +61,34 @@ public class TeasureChest : Interactable
         isOpen = true;
         context.Raise();
         anim.SetBool("opened", true);
+        storedOpen.runtimeValue = isOpen;
+        Debug.Log("chest is open");
 
     }
     public void ChestAlreadyOpen()
     {
-            dialogBox.SetActive(false);
-            //playerInventory.currentItem = null;
-            raiseItem.Raise();
+        dialogBox.SetActive(false);
+        //playerInventory.currentItem = null;
+        raiseItem.Raise();
 
     }
-    private void OnTriggerEnter2D (Collider2D other){
+    private void OnTriggerEnter2D(Collider2D other)
+    {
 
-        if (other.CompareTag("Player")&& !other.isTrigger && !isOpen){
+        if (other.CompareTag("Player") && !other.isTrigger && !isOpen)
+        {
             context.Raise();
             playerInRange = true;
 
         }
     }
-    private void OnTriggerExit2D(Collider2D other){
-        if (other.CompareTag("Player") && !other.isTrigger && !isOpen){
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player") && !other.isTrigger && !isOpen)
+        {
             context.Raise();
-            playerInRange = false ;
+            playerInRange = false;
 
+        }
     }
-}
 }
