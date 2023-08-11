@@ -11,13 +11,16 @@ public enum EnemyState
 }
 public class Enemy : MonoBehaviour
 {
-
+    [Header("State Machine")]
     public EnemyState currentState;
+    [Header("Enemy Stats")]
     public float health;
     public FloatValue maxHealth;
     public string enemyName;
     public int baseAttack;
     public float moveSpeed;
+    public Vector2 homePosition;
+    [Header("Death Effect")]
     public GameObject deathEffect;
     private float deathEffectDelay = 1f;
     // Start is called before the first frame update
@@ -25,6 +28,9 @@ public class Enemy : MonoBehaviour
     private void Awake()
     {
         health = maxHealth.initialValue;
+    }
+    private void OnEnable() {
+        transform.position = homePosition;
     }
     private void Takedamage(float damage)
     {

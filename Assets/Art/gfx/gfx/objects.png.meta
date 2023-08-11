@@ -1806,13 +1806,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_81
+      name: pot1
       rect:
         serializedVersion: 2
-        x: 73
-        y: 201
-        width: 12
-        height: 13
+        x: 63
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1890,13 +1890,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_85
+      name: pot3
       rect:
         serializedVersion: 2
-        x: 131
-        y: 204
-        width: 6
-        height: 9
+        x: 127
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2079,13 +2079,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_94
+      name: pot4
       rect:
         serializedVersion: 2
-        x: 163
-        y: 193
-        width: 14
-        height: 18
+        x: 159
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3128,6 +3128,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: pot2
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dee98e15ff0dc643a7036d967daffc5
+      internalID: 1493680253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -3264,11 +3285,9 @@ TextureImporter:
       objects_79: 2090547652
       objects_8: -50410647
       objects_80: 362575471
-      objects_81: -1991338255
       objects_82: 1140945117
       objects_83: -1627965537
       objects_84: 174088497
-      objects_85: 1765004874
       objects_86: -1304193749
       objects_87: 1857738498
       objects_88: -809228130
@@ -3278,10 +3297,13 @@ TextureImporter:
       objects_91: -1416073459
       objects_92: 278774793
       objects_93: -1722003916
-      objects_94: -1790762943
       objects_95: 234205550
       objects_96: -1297189382
       objects_99: -39796305
+      pot1: -1991338255
+      pot2: 1493680253
+      pot3: 1765004874
+      pot4: -1790762943
       switch 2: 330187113
   spritePackingTag: 
   pSDRemoveMatte: 0
