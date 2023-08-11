@@ -21,15 +21,15 @@ public class door : Interactable
     {
         if (Input.GetButtonDown("attack"))
         {
+
             if (playerInRange && thisDoorType == DoorType.key)
             {
                 //Does the player have a key?
                 if (playerInventory.numberOfKeys > 0)
                 {
-                    //Remove a player key
                     playerInventory.numberOfKeys--;
-                    //If so, then call the open method
                     Open();
+
                 }
             }
         }

@@ -2237,6 +2237,8 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 5a4a5669c71cded4aa6537f99a25347c, type: 3}
   - {fileID: 21300000, guid: dd990969552bc0647a7702ff80f660cb, type: 3}
   - {fileID: 21300000, guid: 8ed569698388ba0499c5b48d06b05fe2, type: 3}
+  - {fileID: 880470062, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
+  - {fileID: 330187113, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
   - {fileID: -1151292064, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
   - {fileID: -1085707804, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
   - {fileID: -978825133, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
@@ -2260,11 +2262,9 @@ SpriteAtlas:
   - {fileID: -625936641, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
   - {fileID: -502424919, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
   - {fileID: -1304193749, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
-  - {fileID: 330187113, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
   - {fileID: 2004738401, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
   - {fileID: 613499418, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
   - {fileID: 1857738498, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
-  - {fileID: 880470062, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
   - {fileID: -313657261, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
   - {fileID: -2090472147, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
   - {fileID: 362575471, guid: 33f09a69fac38a64a800e434b19541bf, type: 3}
@@ -4995,6 +4995,8 @@ SpriteAtlas:
   - staff_02ab
   - pearl_01a
   - potion_01h
+  - Switch 1
+  - switch 2
   - objects_71
   - objects_70
   - objects_73
@@ -5018,11 +5020,9 @@ SpriteAtlas:
   - objects_51
   - objects_69
   - objects_86
-  - objects_98
   - objects_50
   - objects_66
   - objects_87
-  - objects_97
   - objects_57
   - objects_67
   - objects_80
