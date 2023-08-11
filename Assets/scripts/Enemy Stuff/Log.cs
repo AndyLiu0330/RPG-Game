@@ -52,7 +52,7 @@ public class Log : Enemy
     }
 
 
-    public  void SetAnimFloat(Vector2 setVector)
+    public void SetAnimFloat(Vector2 setVector)
     {
         anim.SetFloat("moveX", setVector.x);
         anim.SetFloat("moveY", setVector.y);
