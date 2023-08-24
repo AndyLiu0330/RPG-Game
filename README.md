@@ -1,7 +1,7 @@
 # RPG-Game
-My first RPG game for studying unity.
+My first RPG game for studying Unity.
 
-[<img src="https://i.ytimg.com/vi/xMJdr_4UwT4/maxresdefault.jpg" width="90%">](https://www.youtube.com/watch?v=xMJdr_4UwT4 "RPG Game")
+[<img src="images/youtube-video-gif.gif" width="90%">](https://www.youtube.com/watch?v=xMJdr_4UwT4 "RPG Game")
 
 # Reference
 I referred to the below YouTube video and decided to make a game during my summer vacation.
